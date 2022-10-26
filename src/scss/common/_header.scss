@@ -8,15 +8,21 @@ header {
 		position: relative;
 
 		h1 {
-			position: absolute;
+			position: relative;
 			bottom: 10px;
-			left: 0px;
+			left: 30px;
 			a {
 				font: bold 24px/1 'arial';
 				color: #fff;
 			}
 			img {
-				height: 30px;
+				height: 40px;
+				margin-left: -40px;
+				margin-top: 40px;
+			}
+			p {
+				margin-left: 10px;
+				margin-top: -38px;
 			}
 		}
 		#gnb {

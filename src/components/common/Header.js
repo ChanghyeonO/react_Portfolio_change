@@ -1,14 +1,17 @@
-import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useRef } from 'react';
+import Menu from './Menu';
+
 export default function Header(props) {
+    const menu = useRef(null);
     const active = { color: 'orange' };
 
     let url = '';
     props.type === 'main'
-        ? (url = process.env.PUBLIC_URL + '/img/logo_w.png')
-        : (url = process.env.PUBLIC_URL + '/img/logo_b.png');
+        ? (url = process.env.PUBLIC_URL + '/img/logo_redball.png')
+        : (url = process.env.PUBLIC_URL + '/img/logo_bigredball.png');
 
 
     return (
@@ -17,6 +20,7 @@ export default function Header(props) {
                 <h1>
                     <Link to='/'>
                         <img src={url} alt="logo" />
+                        <p>WERLTON</p>
                     </Link>
                 </h1>
                 <ul id="gnb">
@@ -53,8 +57,12 @@ export default function Header(props) {
                         </NavLink>
                     </li>
                 </ul>
-                <FontAwesomeIcon icon={faBars} />
+                {/* 토글 버튼 클릭시 참조된 토글함수 호출 */}
+                <FontAwesomeIcon icon={faBars} onClick={() => menu.current.toggle()} />
             </div>
+
+            {/*menu.current에 담기는 값은 자식컴포넌트에서 useImperativeHandle이 내보내주고 있는 toggle함수*/}
+            <Menu ref={menu} />
         </header>
     )
 }
