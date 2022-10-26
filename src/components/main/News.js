@@ -37,14 +37,16 @@ function News() {
 
     return (
         <main id="news" className='myScroll'>
-            <h1>News</h1>
+            <h1>POPULAR TOUR</h1>
+            <h2>There will be a small title here</h2>
             {Posts.map((post, idx) => {
                 if (idx >= 5) return; //5개의 인덱스만 가져다 달라는 의미
 
                 return (
                     <article key={idx}>
-                        <h2>{post.title}</h2>
+                        <h3>{post.title}</h3>
                         <p>{post.content}</p>
+                        <p><img src="../img/member1.jpg/" alt="ddd" /></p>
                     </article>
                 );
             })}

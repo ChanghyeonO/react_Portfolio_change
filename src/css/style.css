@@ -299,9 +299,10 @@ header.main .inner .fa-bars {
 #news {
   width: 100%;
   height: 100vh;
-  background: #c6ffc6;
+  background: #000;
   position: relative;
   padding: 10vw;
+  opacity: 0.8;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -311,11 +312,19 @@ header.main .inner .fa-bars {
   display: block;
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  font: bold 50px/1 "arial";
+  color: #fff;
+}
+#news h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font: bold 20px/1 "arial";
+  color: #fff;
 }
 #news article {
   width: 15%;
-  min-height: 180px;
+  min-height: 300px;
   border: 1px solid #888;
   padding: 20px;
   margin: 10px;
@@ -361,14 +370,14 @@ header.main .inner .fa-bars {
   overflow: hidden;
 }
 #pics p {
-  font: bold 200px/1 "arial";
+  font: bold 110px/1 "arial";
   color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 100px;
   left: 100px;
 }
 #pics h3 {
-  font: bold 160px/1 "arial";
+  font: bold 100px/1 "arial";
   color: #fff;
   position: absolute;
   top: 160px;
@@ -425,22 +434,45 @@ header.main .inner .fa-bars {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  right: 50px;
+  right: -3%;
   z-index: 3;
 }
 .scroll_navi li {
-  width: 10px;
-  height: 10px;
-  border: 1px solid #111;
-  background: #fff;
-  margin: 20px;
+  display: flex;
+  position: relative;
+  right: 40%;
+  width: 100%;
+  margin: 30px;
   cursor: pointer;
   transition: 0.5s;
+  font: bold 25px/1 "arial";
+  color: #fff;
+  opacity: 0.5;
+}
+.scroll_navi li div {
+  width: 100%;
+  height: 14px;
+  border-bottom: 2px solid #fff;
+  margin: 0;
+}
+.scroll_navi li p {
+  position: relative;
+  right: 10px;
 }
 .scroll_navi li.on {
-  height: 100px;
-  background: #111;
+  height: 50px;
   border: #fff;
+  font-size: 50px;
+  opacity: 1;
+}
+.scroll_navi li.on div {
+  width: 100%;
+  height: 25px;
+  border-bottom: 4px solid #fff;
+}
+.scroll_navi li.on p {
+  position: relative;
+  right: 31px;
 }
 
 .Community > .inner .inputBox {

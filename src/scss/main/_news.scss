@@ -1,9 +1,10 @@
 #news {
 	width: 100%;
 	height: 100vh;
-	background: #c6ffc6;
+	background: #000;
 	position: relative;
 	padding: 10vw;
+	opacity: 0.8;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -14,11 +15,19 @@
 		display: block;
 		width: 100%;
 		text-align: center;
-		margin-bottom: 20px;
+		font: bold 50px/1 'arial';
+		color: #fff;
+	}
+	h2 {
+		display: block;
+		width: 100%;
+		text-align: center;
+		font: bold 20px/1 'arial';
+		color: #fff;
 	}
 	article {
 		width: 15%;
-		min-height: 180px;
+		min-height: 300px;
 		border: 1px solid #888;
 		padding: 20px;
 		margin: 10px;

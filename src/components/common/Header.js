@@ -6,7 +6,7 @@ import Menu from './Menu';
 
 export default function Header(props) {
     const menu = useRef(null);
-    const active = { color: 'orange' };
+    let active = { color: 'forestgreen'};
 
     let url = '';
     props.type === 'main'
@@ -26,13 +26,13 @@ export default function Header(props) {
                 <ul id="gnb">
                     <li>
                         <NavLink to='/department' activeStyle={active}>
-                            Department
+                            About
                         </NavLink>
 
                     </li>
                     <li>
                         <NavLink to='/community' activeStyle={active}>
-                            Community
+                            Q&A
                         </NavLink>
                     </li>
                     <li>

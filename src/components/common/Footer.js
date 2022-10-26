@@ -3,7 +3,7 @@ export default function Footer() {
     return (
         <footer>
             <div class="inner">
-            <h1>ANKERSTORE</h1>
+            <h1>WERLTON</h1>
             <ul>
                 <li><a href="#">Policy</a></li>
                 <li><a href="#">Terms</a></li>
@@ -16,7 +16,7 @@ export default function Footer() {
                 Tel : +82-10-4402-6623  FAX: +82-2-2100-7999
             </address>
 
-            <p>Copyright &copy; 2022 ANKERSTORE ALL Right reserved</p>
+            <p>Copyright &copy; 2022 WERLTON ALL Right reserved</p>
         </div>
         </footer>
     )

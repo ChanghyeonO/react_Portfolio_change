@@ -7,20 +7,22 @@ function Pics({ Scrolled, start }) {
     // console.log(Scrolled);
     return (
         <main id="pics" className='myScroll'>
-            <p
-                style={{
-                    left: 100 + position,
+            <p style={{
+                    left: 50 + position,
                 }}
-            // style={
-            //     position >= 0
-            //         ? { left: 100 + position, }
-            //         : null
-            >FLICKR</p>
-            <h3
-                style={{
+            >
+            DISCOVER THE <br/>
+            WORLD IN A <br/>
+            NEW WAY
+            </p>
+            <h3 style={{
                     left: 100 + position / 2,
                 }}
-            >FLICKR</h3>
+            >
+            DISCOVER THE <br/>
+            WORLD IN A <br/>
+            NEW WAY   
+            </h3>
         </main>
     );
 }
