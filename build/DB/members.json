@@ -2,12 +2,12 @@
     "members": [
         {
             "name": "Julia",
-            "positon": "President",
+            "positon": "CEO",
             "pic": "member1.jpg"
         },
         {
             "name": "David",
-            "positon": "Vice President",
+            "positon": "CTO",
             "pic": "member2.jpg"
         },
         {

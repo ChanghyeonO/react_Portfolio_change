@@ -41,13 +41,13 @@ const Menu = forwardRef((props, ref) => {
 					<ul id="gnb">
 						<li>
 							<NavLink to='/department' activeStyle={active}>
-								Department
+								About
 							</NavLink>
 
 						</li>
 						<li>
 							<NavLink to='/community' activeStyle={active}>
-								Community
+								Q&A
 							</NavLink>
 						</li>
 						<li>

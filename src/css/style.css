@@ -265,7 +265,7 @@ header.main .inner .fa-bars {
 }
 .pop .close {
   font: bold 14px/1 "arial";
-  color: orange;
+  color: forestgreen;
   position: absolute;
   top: 40px;
   right: 5vw;
@@ -334,7 +334,7 @@ header.main .inner .fa-bars {
 }
 #news article h2 {
   font: bold 18px/1 "arial";
-  color: #444;
+  color: #fff;
   margin-bottom: 15px;
 }
 #news article p {
@@ -364,7 +364,7 @@ header.main .inner .fa-bars {
 #pics {
   width: 100%;
   height: 100vh;
-  background: #c6fcff;
+  background: #666;
   position: relative;
   padding: 10vw;
   overflow: hidden;
@@ -388,7 +388,7 @@ header.main .inner .fa-bars {
 #vids {
   width: 100%;
   height: 100vh;
-  background: #eeffc6;
+  background: #444;
   position: relative;
   padding: 10vw;
 }
@@ -406,7 +406,7 @@ header.main .inner .fa-bars {
   justify-content: center;
   align-items: center;
   font: bold 50px/1 "arial";
-  color: #666;
+  color: #000;
   opacity: 0.5;
   transform: scale(0.8);
   transition: opacity 0.5s, transform 0.5s;
@@ -438,9 +438,9 @@ header.main .inner .fa-bars {
   z-index: 3;
 }
 .scroll_navi li {
-  display: flex;
-  position: relative;
-  right: 40%;
+  display: inline-flex;
+  position: static;
+  right: 80%;
   width: 100%;
   margin: 30px;
   cursor: pointer;
@@ -451,8 +451,7 @@ header.main .inner .fa-bars {
 }
 .scroll_navi li div {
   width: 100%;
-  height: 14px;
-  border-bottom: 2px solid #fff;
+  height: 10%;
   margin: 0;
 }
 .scroll_navi li p {
@@ -462,12 +461,12 @@ header.main .inner .fa-bars {
 .scroll_navi li.on {
   height: 50px;
   border: #fff;
-  font-size: 50px;
+  font-size: 60px;
   opacity: 1;
 }
 .scroll_navi li.on div {
   width: 100%;
-  height: 25px;
+  height: 33px;
   border-bottom: 4px solid #fff;
 }
 .scroll_navi li.on p {
