@@ -5,10 +5,13 @@
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-
+	h1{
+		font: bold 50px/1 'arial';
+	}
 	video {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		opacity: 0.5;
 	}
 }

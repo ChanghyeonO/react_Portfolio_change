@@ -424,10 +424,14 @@ header.main .inner .fa-bars {
   z-index: 1;
   overflow: hidden;
 }
+#visual h1 {
+  font: bold 50px/1 "arial";
+}
 #visual video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.5;
 }
 
 .scroll_navi {
@@ -442,7 +446,7 @@ header.main .inner .fa-bars {
   position: static;
   right: 80%;
   width: 100%;
-  margin: 30px;
+  margin: 18px;
   cursor: pointer;
   transition: 0.5s;
   font: bold 25px/1 "arial";
