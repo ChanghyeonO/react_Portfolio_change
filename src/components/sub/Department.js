@@ -15,7 +15,7 @@ export default function Department() {
     }, []);
 
     return (
-        <Layout name={'Department'}>
+        <Layout name={'About'}>
             {Members.map((data, index) => {
                 return (
                     <article key={index}>
