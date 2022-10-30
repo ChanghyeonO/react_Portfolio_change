@@ -3,11 +3,11 @@ import { Member1, Member2, Member3, Member4, Member5 } from '../../asset/index'
 
 
 const Posts = [
-    { title: 'HELLO5', content: 'Here comes description in details', imageSrc: Member1},
-    { title: 'HELLO4', content: 'Here comes description in details', imageSrc: Member2},
-    { title: 'HELLO3', content: 'Here comes description in details', imageSrc: Member3},
-    { title: 'HELLO2', content: 'Here comes description in details', imageSrc: Member4},
-    { title: 'HELLO1', content: 'Here comes description in details', imageSrc: Member5},
+    {imageSrc: Member1},
+    {imageSrc: Member2},
+    {imageSrc: Member3},
+    {imageSrc: Member4},
+    {imageSrc: Member5},
 ];
 
 function News() {
@@ -18,11 +18,9 @@ function News() {
             {Posts.map(({ title, content, imageSrc}) =>
                 (
                     <article key={title}>
-                        <h3>{title}</h3>
-                        <p>{content}</p>
-                        <img src={imageSrc} alt="ddd" style={{
+                        <img src={imageSrc} alt="PopularTourImg" style={{
                             width: "100%",
-                            height: "199px",
+                            height: "350px",
                             objectFit: "fill"
                         }}/>
                     </article>

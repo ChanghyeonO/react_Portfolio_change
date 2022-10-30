@@ -5,25 +5,29 @@
 			border: 1px solid #bbb;
 			padding: 50px;
 			margin-bottom: 50px;
+			border-radius: 10px;
 
 			input[type='text'],
 			textarea {
-				width: 50%;
-				padding: 8px 10px;
+				width: 100%;
+				padding: 15px 10px;
 				border: 1px solid #aaa;
-				margin-bottom: 20px;
+				margin-bottom: 10px;
 				resize: none;
+				border-radius: 10px;
 			}
 			.btnSet {
 				button {
 					width: 150px;
 					height: 30px;
 					display: inline-block;
-					border: none;
-					background: #555;
-					color: #fff;
+					border: 1px solid #aaa;
+					background: #fff;
+					color: #000;
 					cursor: pointer;
-					margin-right: 20px;
+					margin-left: 20px;
+					border-radius: 10px;
+					float: right;
 				}
 			}
 		}
@@ -31,25 +35,28 @@
 			width: 100%;
 			border: 1px solid #bbb;
 			padding: 50px;
+			border-radius: 10px;
 			article {
 				background: #fff;
-				padding: 30px;
+				padding: 5px;
 				margin-bottom: 40px;
 				display: flex;
 				justify-content: space-between;
 				flex-wrap: wrap;
 				align-content: center;
-
+				border-radius: 10px;
 				.editTxt {
 					width: 60%;
 					input[type='text'],
 					textarea {
 						width: 100%;
-						padding: 8px 10px;
-						border: 1px solid lightblue;
+						margin-top: 10px;
+						padding: 10px 10px;
+						border: 1px solid #ccc;
 						margin-bottom: 20px;
-						background: #eaf9f9;
+						background: #ddd;
 						resize: none;
+						border-radius: 10px;
 					}
 				}
 
