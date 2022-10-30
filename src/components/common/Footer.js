@@ -2,7 +2,7 @@ import React from "react"
 export default function Footer() {
     return (
         <footer>
-            <div class="inner">
+            <div className="inner">
             <h1>WERLTON</h1>
             <ul>
                 <li><a href="#">Policy</a></li>

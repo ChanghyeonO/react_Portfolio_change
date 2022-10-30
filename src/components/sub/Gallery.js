@@ -10,6 +10,7 @@ export default function Gallery() {
     const masonryOptions = { transitionDuration: '0.5s' };
     const [Items, setItems] = useState([]);
     const [Loading, setLoading] = useState(true);
+    console.log("loading", Loading)
     const [EnableClick, setEnableClick] = useState(true);
     const [Index, setIndex] = useState(0);
     const frame = useRef(null);
